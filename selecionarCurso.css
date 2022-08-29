@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    color: white;
+}
+
+/*MENU*/
+h1, h2, h3 {
+    font-family: poppins, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+nav > a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 800;
+    font-size: 60px;
+    font-family: Poppins, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    font-weight: bolder;
+}
+
+nav ul li {
+    text-align: center;
+    margin-left: 230px;
+    color: #252525;
+    font-size: 40px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #2b2b2b;;
+}
+
+.goHome {
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    font-family: poppins;
+    background-color: #2b2b2b;
+    color: white;
+    cursor: pointer;
+}
+
+/*CABEÇALHO*/
+
+header {
+    flex-direction: column;
+    background-image: url(img/sobre.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 26px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+section {
+    margin-top: 140px;
+}
+
+.cursos {
+    width: 800px;
+    height: 140px;
+    border-radius: 8px;
+    border: 0;
+    font-family: poppins;  
+    font-size: 40px;
+    cursor: pointer;
+    transition: 1s;
+}   
+
+.cursos:hover { /* transição dentro da barra */
+    -webkit-transform: scale(1.5);
+    transform: scale(0.9);
+}
+
+
+@media screen and (min-width: 768px) {
+    /*nav*/
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+
+    }
+
+    /*cabeçalho*/
+
+    header {
+        height: 500px;
+        height: 90vh;
+        justify-content: center;
+    }
+
+ 
+}
